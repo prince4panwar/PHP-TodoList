@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Lexend+Giga:wght@500&family=Permanent+Marker&family=Roboto:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Balsamiq Sans', cursive;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  main{
+    position: absolute;
+    top: 100px;
+    height: 20vh;
+    /* width: 70vw; */
+    /* border: 2px solid black; */
+    box-shadow: 5px 5px 50px black;
+    padding: 0 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .nav h1{
+    
+    margin: 15px 0;
+  }
+  .middle{
+    display: none;
+}
+  .middle2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    /* border: 2px solid black; */
+  }
+  .top{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border: 2px solid transparent;
+    padding-bottom: 10px;
+  }
+  .todo-list-grid, .todo-input-grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 150px 150px;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+    padding-bottom: 10px;
+    
+    /* width: 70vw; */
+  }
+  
+  .todo-input-grid {
+    margin-bottom: 10px;
+    align-items: stretch;
+    padding-bottom: 10px;
+
+  }
+  
+  .date-input, .name-input{
+    font-size: 15px;
+    padding: 6px;
+  }
+  
+  .add-button {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .delete-todo-button {
+    background-color: darkred;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+  }
+
+
+  @media (max-width:600px) {
+    .nav h1{
+        font-size: 12vw;
+    }
+    
+    main{
+      position: absolute;
+      top: 70px;
+      width: 98vw;
+      height: 30vh;
+      /* border: 2px solid black; */
+      box-shadow: 5px 5px 50px black;
+      padding: 0;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+    .todo-list-grid, .todo-input-grid {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        padding-bottom: 10px;
+        /* justify-content: center; */
+    }
+    
+  }
